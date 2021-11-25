@@ -52,16 +52,6 @@ h2 {
   margin: 0;
 }
 
-.icon {
-  font-weight: bold;
-  text-decoration: none;
-  color: #343a40;
-}
-
-.icon:hover {
-  color: #ffd60a;
-}
-
 #profile {
   border-radius: 50%;
   width: 200px;
@@ -110,6 +100,11 @@ h2 {
 a {
   text-decoration: none;
   color: #343a40;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #ffd60a;
 }
 
 .btn:hover {
