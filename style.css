@@ -13,35 +13,28 @@
   .container {
     width: 500px;
   }
-  .screenshot {
-    max-width: 220px;
-  }
 }
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
   .container {
-    width: 400px;
-  }
-  .screenshot {
-    max-width: 150px;
+    width: 300px;
   }
 }
 
 body {
   font-family: 'Open Sans';
-  background-color: rgb(253 253 253);
+  background-color: #ffe5ec;
 }
 
 p {
   text-align: justify;
-  margin: 0;
 }
 
 h1 {
   font-weight: 500;
   color: #343a40;
   font-size: 24px;
-  margin: 0;
+  line-height: 10px;
 }
 
 h2 {
@@ -49,24 +42,41 @@ h2 {
   font-weight: 300;
   color: #6c757d;
   font-family: 'Roboto';
-  margin: 0;
+  line-height: 5px;
+}
+
+h3 {
+  font-weight: 500;
+  color: #343a40;
+  font-size: 24px;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #343a40;
+}
+
+a:hover {
+  color: #ffd60a;
 }
 
 #profile {
-  border-radius: 50%;
+  border-radius: 100px;
   width: 200px;
 }
 
 .card {
   border-radius: 10px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: #ffc2d1 0px 8px 24px;
+  background-color: #fafafa;
   margin-bottom: 20px;
   padding: 30px;
+  max-width: 1000px;
 }
 
 .center {
   text-align: center;
-  margin-top: 24px;
 }
 
 .container {
@@ -76,7 +86,7 @@ h2 {
 
 .list-inline > li {
   display: inline-block;
-  margin: 0px 10px;
+  padding: 0px 10px;
   font-size: 30px;
 }
 
@@ -85,52 +95,56 @@ h2 {
   padding-left: 0px;
 }
 
-.btn {
+button {
   font-size: 30px;
-  margin: 20px;
+  margin: 5px;
   background-color: #7400b8;
   border: 0px;
   color: white;
-  padding: 8px 24px;
-  font-size: 20px;
+  padding: 10px;
+  font-size: 18px;
   border-radius: 4px;
   font-family: 'Roboto';
 }
 
-a {
-  text-decoration: none;
-  color: #343a40;
-  font-weight: 600;
-}
-
-a:hover {
-  color: #ffd60a;
-}
-
-.btn:hover {
+button:hover {
   background-color: #343a40;
-  color: white;
 }
 
-h3 {
+.title {
   color: #ffd60a;
   font-family: 'Roboto';
   font-size: 32px;
   text-align: center;
   font-weight: 450;
-  margin: 0;
+}
+
+.project-text {
+  display: inline;
+  float: left;
+  max-width: 400px;
+  text-align: justify;
+}
+
+.project-text strong {
+  color: #64dfdf;
+  font-weight: 500;
+}
+
+.project-image {
+  display: inline;
+  float: right;
+  margin: 15px;
+  flex: 1 1 0;
+  min-width: 150px;
 }
 
 .flex {
   display: flex;
-  margin: 24px 0px;
+  align-items: space-evenly;
+  margin: 10px;
 }
 
-.text {
-  margin-left: 10px;
-}
-
-.strong {
-  margin-bottom: 4px;
-  font-weight: 600;
+.screenshot {
+  max-width: 100%;
 }
